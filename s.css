@@ -1,0 +1,175 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #b1c9f7;
+    /* Light background */
+}
+
+.contact-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.email {
+    font-size: 16px;
+    color: #007BFF;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.about-me {
+    margin-top: 100px;
+    /* Adjusted to create space from the top */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Circular image */
+    object-fit: cover;
+    /* Ensures the image covers the area */
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-title,
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-summary,
+.project-summary {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.projects {
+    margin-top: 40px;
+    /* Space above projects section */
+}
+
+.recommendation-section {
+    margin-top: 40px;
+    /* Space above recommendation section */
+}
+
+.recommendation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recommendation-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.recommendation-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.recommendation-button:hover {
+    background-color: #0056b3;
+}
+
+.recommendation-section {
+    margin-top: 40px;
+    /* Space above recommendation section */
+}
+
+.recommendations {
+    display: flex;
+    gap: 20px;
+    /* Space between recommendation boxes */
+    margin-top: 20px;
+    /* Space above recommendations */
+}
+
+.recommendation-box {
+    background-color: #ffffff;
+    /* White background for boxes */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* Equal width for boxes */
+}
+
+.skills-section {
+    margin-top: 40px;
+    /* Space above skills section */
+}
+
+.skills-list {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+}
+
+.skills-list li {
+    background-color: #e7f1ff;
+    /* Light background for skill items */
+    margin: 5px 0;
+    /* Space between items */
+    padding: 10px;
+    /* Padding for items */
+    border-radius: 4px;
+    /* Rounded corners */
+}

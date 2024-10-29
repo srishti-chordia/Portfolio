@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .contact-info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .email {
+            font-size: 16px;
+            color: #007BFF;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        .email:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .about-me {
+            margin-top: 100px;
+            /* Adjusted to create space from the top */
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* Circular image */
+            object-fit: cover;
+            /* Ensures the image covers the area */
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-title,
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .about-summary,
+        .project-summary {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            margin-top: 40px;
+            /* Space above projects section */
+        }
+
+        .recommendation-section {
+            margin-top: 40px;
+            /* Space above recommendation section */
+        }
+
+        .recommendation-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .recommendation-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .recommendation-button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        .recommendation-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function submitRecommendation(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Thanks for leaving a recommendation!");
+            document.getElementById("recommendationForm").reset(); // Reset form
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="contact-info">
+        <div class="name">Srishti Chordia</div>
+        <div class="contact">Contact: +91 9988776655</div>
+        <a href="mailto:example@example.com" class="email">srishti@example.com</a>
+    </div>
+
+    <div class="navbar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#project-details" class="nav-link">Project Details</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#recommendations" class="nav-link">Recommendations</a>
+    </div>
+
+    <div class="about-me" id="about">
+        <img src="Profile.jpeg" alt="Profile Image" class="profile-image">
+        <div class="about-text">
+            <div class="about-title">About Me</div>
+            <div class="about-summary">
+                I am a Pre-Final year student pursuing B. Tech in Computer Science and Engineering, passionate about AI, ML, Web development, Cloud
+                Computing, and Data Science. Demonstrated proficiency in swiftly understanding intricate concepts and
+                applying them efficiently. A team player with robust leadership qualities and exceptional communication
+                skills. Excels under pressure, staying composed and focused to meet project deadlines.
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section" id="skills"></div>
+        <div class="about-title">Skills</div>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>Flask</li>
+            <li>TensorFlow</li>
+            <li>MySQL</li>
+            <li>Deep Learning</li>
+            <li>Web Development</li>
+        </ul>
+    </div>
+
+    <div class="projects" id="project-details">
+        <div class="about-title">Projects</div>
+
+        <div class="project-summary">
+            <strong>Gestational Mellitus Diabetes Prediction System</strong><br>
+            A deep learning model developed to predict pregnant women at the risk of gestational diabetes or having
+            diabetes with a public dataset. The model has an accuracy of 89% and has been deployed to a website.<br>
+            <em>Technologies:</em> Python, scikit-learn, Flask, TensorFlow
+        </div>
+
+        <div class="project-summary">
+            <strong>Pathology Management System</strong><br>
+            A web-based application developed using HTML, CSS, and JavaScript for the front-end, with MySQL as the
+            database for managing data. It allows users to manage patient records, test results, and appointments
+            efficiently, providing an interface for both patients and medical professionals to interact with the
+            system.<br>
+            <em>Technologies:</em> HTML, CSS, JavaScript, MySQL
+        </div>
+
+        <div class="project-summary">
+            <strong>Fruit Recognition and Counting</strong><br>
+            A deep learning model trained using Ultralytics YOLOv8x and the dataset is sourced and annotated from
+            Roboflex. It is an application for the agriculture domain to count the yield production with an accuracy of
+            86%.<br>
+            <em>Technologies:</em> Python, Yolov8x, OpenCV
+        </div>
+
+        <div class="project-summary">
+            <strong>Mental Health Prediction Website</strong><br>
+            Designed and developed a web-based Mental Health Prediction application enabling users to predict their
+            mental state by answering a series of questions. The model has an accuracy of 87%.<br>
+            <em>Technologies:</em> Python, Flask, scikit-learn, HTML, CSS
+        </div>
+    </div>
+
+    <div class="recommendations">
+        <div class="recommendation-box">
+            <p><strong>John Doe</strong><br>"An exceptional learner with great potential!"</p>
+        </div>
+        <div class="recommendation-box">
+            <p><strong>Jane Smith</strong><br>"A diligent student who consistently delivers quality work."</p>
+        </div>
+        <div class="recommendation-box">
+            <p><strong>Emily Johnson</strong><br>"Always eager to learn and take on new challenges!"</p>
+        </div>
+        <div class="recommendation-box">
+            <p><strong>Michael Brown</strong><br>"An outstanding team player and a critical thinker."</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="recommendation-section" id="recommendations">
+        <div class="about-title">Leave a Recommendation</div>
+        <form id="recommendationForm" class="recommendation-form" onsubmit="submitRecommendation(event)">
+            <input type="text" class="recommendation-input" placeholder="Name (optional)">
+            <textarea class="recommendation-input" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="recommendation-button">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
